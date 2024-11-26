@@ -14,7 +14,7 @@ Future<String> product() async {
     final String data = response.body;
     final Map<String, dynamic> decodedJson = jsonDecode(data);
     final String bestProducts =
-        decodedJson["products"][0]["tags"][1].toString();
+        decodedJson["products"][0]["tags"][2].toString();
     return bestProducts;
   } else {
     return Future.error("Error");
